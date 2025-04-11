@@ -9,10 +9,8 @@ function App() {
       <div className="min-h-screen bg-dark">
         <Header />
         <Routes>
-          {/* Redirect root to copilot */}
+          {/* Redirect root to about us page */}
           <Route path="/" element={<Navigate to="/about" replace />} />
-          
-          {/* Hidden but preserved routes */}
           <Route path="/about" element={<AboutPage />} />
           <Route path="/blog" element={<BlogPage />} />
         </Routes>
